@@ -1,0 +1,64 @@
+@import "reset.css";
+
+body {
+  overflow: hidden;
+
+}
+
+img {
+  height: 100vh;
+  width: 100vw;
+}
+
+.box {
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+}
+
+.square {
+  width: calc(100vw / 8);
+  height: calc(100vw / 8);
+  background: black;
+  border: 1vh solid white;
+  box-sizing: border-box;
+
+  /* animation: del 3600s ease infinite; */
+}
+
+.square:hover {
+  animation: del 2s linear normal;
+
+}
+
+
+@keyframes del {
+    0% {
+   opacity: 1;
+   }
+  /* 0.001% {
+   opacity: 0;
+  }
+  0.01% {
+   opacity: 0;
+  }
+  0.1% {
+   opacity: 0;
+  }
+  1% {
+   opacity: 0;
+  }
+  99.999% {
+  opacity: 0;
+  }  */
+  100% {
+  opacity: 0;
+}
+}
